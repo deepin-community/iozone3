@@ -1,15 +1,17 @@
-Source: template-repository
-Section: unknown
+Source: iozone3
+Section: non-free/utils
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Steve M. Robbins <smr@debian.org>
+Build-Depends: debhelper-compat (= 12), quilt
+XS-Autobuild: yes
+Homepage: http://www.iozone.org/
+Standards-Version: 4.5.0
 
-Package: template-repository
+Package: iozone3
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Filesystem and Disk Benchmarking Tool
+ Iozone is useful for determining a broad benchmark of filesystem 
+ performance. The benchmark tests file I/O performance for the
+ following operations: Read, write, re-read, re-write, read backwards, 
+ read strided, fread, fwrite, random read/write, pread/pwrite variants.
